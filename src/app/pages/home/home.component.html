@@ -1,0 +1,8 @@
+<section class="cards">
+    <div class="card-item" *ngFor="let filme of filmes">
+        <div class="cover">
+            <img [src]="filme.poster" />
+        </div>
+        <p>{{filme.title}}</p>
+    </div>
+</section>

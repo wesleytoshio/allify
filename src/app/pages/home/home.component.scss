@@ -1,0 +1,40 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    max-width: 1360px;
+    margin: 40px auto;
+    justify-content: center;
+    gap: 1.5em;
+}
+.card-item{
+   height: 400px;
+   display: grid;
+   align-content: center;
+   justify-content: center;
+   position: relative;
+   .cover{
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    img{
+        object-fit: cover;
+        width: 250px;
+        height: 100%;
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        transform: scale(1);
+    }
+    &:hover{
+            height: 350px;
+            border-radius: 10px;
+            overflow: hidden;
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    p{
+        color: white;
+        text-align: center;
+    }
+}
